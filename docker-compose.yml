@@ -1,7 +1,7 @@
 version: '3.9'
 
 services:
-  web:
+  pocketjam-leaderboard:
     build: .
     ports:
       - "8000:8000"
