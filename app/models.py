@@ -3,7 +3,7 @@ from datetime import datetime
 from sqlalchemy import Column, String, Integer, DateTime, ForeignKey
 from sqlalchemy.dialects.sqlite import BLOB
 from sqlalchemy.orm import relationship
-from database import Base
+from .database import Base
 
 class Leaderboard(Base):
     __tablename__ = "leaderboards"

@@ -3,9 +3,9 @@ from sqlalchemy.orm import Session
 from typing import List, Optional
 from fastapi.middleware.cors import CORSMiddleware
 
-from database import SessionLocal, engine, Base
-from models import Leaderboard, Score
-from schemas import LeaderboardCreate, LeaderboardKeys, ScoreCreate, ScoreOut, LeaderboardInfo
+from .database import SessionLocal, engine, Base
+from .models import Leaderboard, Score
+from .schemas import LeaderboardCreate, LeaderboardKeys, ScoreCreate, ScoreOut, LeaderboardInfo
 
 Base.metadata.create_all(bind=engine)
 
